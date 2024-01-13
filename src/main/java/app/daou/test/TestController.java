@@ -13,11 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     private final GoodsService goodsService;
 
-    @GetMapping("/")
-    public String test(){
-        return "index";
-    }
-
     @GetMapping("/goods/{id}")
     public GoodsResponseDto findById(@PathVariable Long id){
         return null;
